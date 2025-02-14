@@ -18,4 +18,15 @@ print("Количество гласных: ",vowels_count(text_input))
 
 # task 3
 list = [12345,34565,276852,1234,1,3,4,5,6]
-print("Max num: ", max(list))
+max=list[0]
+min=list[0]
+
+for num in list:
+    if num> max:
+        max=num
+    if num< min:
+        min=num
+
+
+print("Max: ", max)
+print("Min: ", min)
